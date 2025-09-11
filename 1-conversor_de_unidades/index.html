@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <section>
         <h1>Conversor de Unidades</h1>
-        <article>
+        <article class="input-group">
             <label for="input">Digite a quantidade:</label>
             <input type="number" name="input" id="input" placeholder="0">
         </article>
-        <article>
+        <article class="input-group">
             <label for="from">De:</label>
             <select name="from" id="from">
                 <option value="m">Metro(s)</option>
@@ -21,7 +23,7 @@
                 <option value="">Milímetro(s)</option>
             </select>
         </article>
-        <article>
+        <article class="input-group">
             <label for="to">Para:</label>
             <select name="to" id="to">
                 <option value="m">Metro(s)</option>
@@ -30,12 +32,13 @@
                 <option value="">Milímetro(s)</option>
             </select>
         </article>
+        <button id="convert-btn">Converter</button>
+        <article class="output-group">
+            <label for="output">Resultado:</label>
+            <input type="text" id="output" readonly />
+        </article>
+        <div id="message"></div>
     </section>
-    <button id="convert-btn">Converter</button>
-    <section>
-        <label for="output">Resultado:</label>
-        <input type="text" id="output" readonly />
-    </section>
-    <div id="message"></div>
+    
 </body>
 </html>
