@@ -47,11 +47,11 @@ h1,h2,h3{
   margin-inline: auto;
 }
 
-/*utility-first*/
-.grid{
-  display: grid;
+main{
+  margin-top: 40px;
 }
 
-.grid-flow-col{
-  grid-auto-flow: column;
+img{
+  max-width: 100%;
 }
+
